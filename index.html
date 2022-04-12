@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    </head>
+    <body>
+        <section class="section">
+            <img id="toggler" src="images/icon-menu.svg" alt="">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.svg" alt=""></a>
+            </div>
+            <nav class="overcast">
+                <div class="nav-box">
+                    <img src="images/icon-close.svg" id="closeNav" alt="">
+                    <ul>
+                        <li>Collections</li>
+                        <li>Men</li>
+                        <li>Women</li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </nav>
+            <img class="cart" src="images/icon-cart.svg" alt=""><span class="badge">4</span>
+            <img class="avatar" src="images/image-avatar.png" alt="">
+        </section>
+        <div class="container">
+            <div role="main" class="main">
+                <img class="product" src="images/image-product-1.jpg" alt="">
+                <div class="reel">
+                    <img class="reel-image" id="active" src="images/image-product-1-thumbnail.jpg" alt="">
+                    <img class="reel-image" src="images/image-product-2-thumbnail.jpg" alt="">
+                    <img class="reel-image" src="images/image-product-3-thumbnail.jpg" alt="">
+                    <img class="reel-image" src="images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+                <div class="moveIcon">
+                    <img src="images/icon-previous.svg" alt="">
+                    <img src="images/icon-next.svg" alt="">
+                </div>
+            </div>
+            <div class="sub-container">
+                <div class="info">
+                    <span>SNEAKER COMPANY</span>
+                    <h1>Fall Limited Edition Sneakers</h1>
+                    <p>These low profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer. </p>
+                </div>
+                <div class="priceInfo">
+                    <div class="currentPrice">
+                        <h1 id="">$<span id="price">125.00</span></h1>
+                        <p>50%</p>
+                    </div>
+                    <p>$250.00</p>
+                </div>
+                <div class="btnArea">
+                    <div class="qty">
+                        <p id="subtract">-</p>
+                        <p id="num">0</p>
+                        <p id="add">+</p>
+                    </div>
+                    <button><img src="images/icon-cart.svg" alt=""> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cart-modal" id="modal">
+                <div class="modal-content">
+                    <div class="cart-header">
+                        <p>Cart</p>  
+                        <span class="close-modal">&times;</span>
+                    </div>
+                    <div class="cart-body">Your cart is empty.</div>
+                </div>
+            </div>
+        </div>
+        <!-- LIGHTBOX -->
+        <div id="lightbox" class="lightbox">
+            <div class="lightbox-content">
+                <img src="images/icon-close.svg" alt="" class="closeBox">
+                <img class="product" id="lightboxDisplay" src="images/image-product-1.jpg" alt="">
+                <div class="reel">
+                    <img class="box reel-image" id="active" src="images/image-product-1-thumbnail.jpg" alt="">
+                    <img class="box reel-image" src="images/image-product-2-thumbnail.jpg" alt="">
+                    <img class="box reel-image" src="images/image-product-3-thumbnail.jpg" alt="">
+                    <img class="box reel-image" src="images/image-product-4-thumbnail.jpg" alt="">
+                </div>
+                <div class="moveIcon">
+                    <img id="prev" src="images/icon-previous.svg" alt="">
+                    <img id="next" src="images/icon-next.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async defer></script>
+    </body>
+</html>
