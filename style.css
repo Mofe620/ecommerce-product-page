@@ -314,6 +314,9 @@ button img {
     margin-top: 2em;
     width: 80%;
 }
+#lightbox {
+    display: none;
+}
 
 /* MEDIA QUERY */
 @media (min-width:450px) {
